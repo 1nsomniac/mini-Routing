@@ -16,11 +16,15 @@ angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterP
             templateUrl: 'js/products/productTmpl.html',
             controller: 'productsCtrl',
             service: 'productsCtrl'
+        })
+        .state('product', {
+            url: '/product',
+            templateUrl: 'js/products/productHomeTmpl.html',
         });
 
     $urlRouterProvider.otherwise('/')
 
-    console.log('hello')
+    // console.log('hello')
 })
 
 
